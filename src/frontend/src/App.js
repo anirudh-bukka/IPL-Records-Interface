@@ -1,6 +1,4 @@
 import './App.css';
-import { MatchDetailCard } from './components/MatchDetailCard';
-import { MatchSmallCard } from './components/MatchSmallCard';
 import TeamPage from './pages/TeamPage';
 
 function App() {
