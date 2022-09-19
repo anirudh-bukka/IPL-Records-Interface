@@ -11,22 +11,7 @@ export const TeamPage = () => {
     const {teamName} = useParams();
     console.log(teamName);
 
-    // function useQuery() {
-    //   const { search } = useLocation();
-
-    //   return React.useMemo(() => new URLSearchParams(search), [search]);
-    // }
-    // let query = useQuery();
-    // console.log(query.get("teamName"));
-
-    const fetchMatches = async () => {
-      // whatever you pass in this function, is executed when the component loads.
-      // const response = await fetch('http://localhost:8080/team/Sunrisers Hyderabad'); // why await? Because 'fetch' returns a promise.
-      const response = await fetch(`http://localhost:8080/team/${teamName}`);
-      // const response = await fetch(`${process.env.REACT_APP_API_ROOT_URL}/team/${teamName}`);
-      const data = await response.json();
-      setTeam(data);
-  };
+    
 
     // useEffect does not support Async functions
     useEffect(
@@ -34,7 +19,13 @@ export const TeamPage = () => {
         // passing a function, which is executed when the component loads.
         () => {
           // make a REST API call (use, fetch & Wrap this in an Async function)
-            
+          const fetchMatches = async () => {
+            // ---> whatever you pass in this function, is executed when the component loads. <---
+            const response = await fetch('http://localhost:8080/team/Sunrisers Hyderabad'); // why await? Because 'fetch' returns a promise.
+            // const response = await fetch(`http://localhost:8080/team/${teamName}`);
+            const data = await response.json();
+            setTeam(data);
+          };
             fetchMatches();
         }, []
         // above is dependency list --> you want the useEffect to run when the component loads.
