@@ -10,7 +10,6 @@ export const MatchSmallCard = ({teamName, match}) => {
 
     return (
         <div className='MatchSmallCard'>
-            {otherTeam}
             <h3>*vs* <Link to={otherTeamRoute}>{otherTeam}</Link></h3>
             <p>{match.matchWinner}  won by {match.resultMargin} {match.result}</p>
             <hr></hr>
