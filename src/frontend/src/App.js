@@ -7,11 +7,11 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/teams/:teamName"></Route>
+          <Route path="/teams" element={<TeamPage /> }/>
         </Routes>
 
         <TeamPage />
-        
+
       </Router>
       
     </div>
