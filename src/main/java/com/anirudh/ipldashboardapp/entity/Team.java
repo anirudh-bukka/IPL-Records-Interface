@@ -19,9 +19,20 @@ public class Team {
     private String teamName;
     private long totalMatches;
     private long totalWins;
+    private String resultMargin;
 
+    public void setId(long id) {
+        this.id = id;
+    }
 
-    // Getter and Setter methods
+    public String getResultMargin() {
+        return resultMargin;
+    }
+
+    public void setResultMargin(String resultMargin) {
+        this.resultMargin = resultMargin;
+    }
+// Getter and Setter methods
 
     public long getId() {
         return id;
@@ -61,8 +72,11 @@ public class Team {
                 ", teamName='" + teamName + '\'' +
                 ", totalMatches=" + totalMatches +
                 ", totalWins=" + totalWins +
+                ", resultMargin='" + resultMargin + '\'' +
+                ", matches=" + matches +
                 '}';
     }
+
 
 
     // member variable to help you get the latest 3-4 matches.
