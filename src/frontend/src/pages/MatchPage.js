@@ -13,12 +13,33 @@ export const MatchPage = () => {
     //     return <h1>Team Not Found</h1>
     // }
 
+    const [matches, setMatches] = useState([]);
+    // const teamName = "Delhi Capitals";
+    const { teamName, year } = useParams();
+
+    useEffect (
+        () => {
+            const fetchMatches = async() => {
+                const response = await fetch(`http://localhost:8080/team/${teamName}/matches?year=${year}`);
+                const data = await response.json();
+                setMatches(data);
+            };
+
+            fetchMatches();
+        }, []
+    );
+
     return (
         <div className='MatchPage'>
             {/* <h1>{team.teamName}</h1>
             <MatchDetailCard teamName={team.teamName} match={team.matches[0]}/>
             {team.matches.slice(1).map(match => <MatchSmallCard teamName={team.teamName} match={match} />)} */}
-            <h1>Match Page Test</h1>
+            <h3>Match Page</h3>
+            <h1>{teamName}</h1>
+            {
+                matches.map(match => <MatchDetailCard teamName={teamName} match={match} />)
+            }
+            
         </div>
     );
 }
