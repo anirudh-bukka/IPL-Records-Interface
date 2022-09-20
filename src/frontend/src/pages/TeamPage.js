@@ -24,7 +24,7 @@ export const TeamPage = () => {
     );
 
     if(!team || !team.teamName) {
-        return <h1>Team not found</h1>
+        return <h1>Team Not Found</h1>
     }
 
     return (
