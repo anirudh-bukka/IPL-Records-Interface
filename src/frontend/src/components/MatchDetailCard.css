@@ -9,4 +9,5 @@
 
 .MatchDetailCard .innings {
     text-align: right;
+    align-self: center;
 }
