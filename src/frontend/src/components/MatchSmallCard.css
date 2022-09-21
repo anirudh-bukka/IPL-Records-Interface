@@ -1,3 +1,22 @@
 .MatchSmallCard {
     text-align: center;
+    padding: 2%;
+} 
+
+.MatchSmallCard .vs {
+    color: azure;
+} 
+
+.won-card {
+    border-style: solid;
+    border-radius: 25px;
+    border-color: rgb(4, 253, 137);
+    /* background-color: green; */
+}
+
+.lost-card {
+    border-style: solid;
+    border-radius: 25px;
+    border-color: red;
+    /* background-color: red; */
 }

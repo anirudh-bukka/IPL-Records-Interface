@@ -1,6 +1,7 @@
 .MatchDetailCard {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 2%;
 }
 
 .MatchDetailCard .match-date, .match-venue, .match-result {
@@ -10,4 +11,20 @@
 .MatchDetailCard .innings {
     text-align: right;
     align-self: center;
+}
+
+.MatchDetailCard .vs {
+    color: azure;
+}
+
+.won-card {
+    border-style: solid;
+    border-color: green;
+    /* background-color: green; */
+}
+
+.lost-card {
+    border-style: solid;
+    border-color: red;
+    /* background-color: red; */
 }
