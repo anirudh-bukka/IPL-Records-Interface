@@ -17,15 +17,12 @@ function App() {
   return (
     <div className="App">
       <Router>
+
         <Routes>
-          {/* Route path="/teams/:teamName" /> */}
-          {/* <Route path="/teams" element={<TeamPage /> }/> */}
-          <Route path="/teams/:teamName" element={<TeamPage />} />
           <Route path="/teams/:teamName/matches/:year" element={<MatchPage />} />
+          <Route path="/teams/:teamName" element={<TeamPage />} />
         </Routes>
-
-        <TeamPage />
-
+        {/* <TeamPage /> */}
       </Router>
       
     </div>

@@ -1,5 +1,6 @@
 import { React } from 'react';
 import { Link } from 'react-router-dom';
+import './MatchDetailCard.css';
 
 
 export const MatchDetailCard = ({teamName, match}) => {
@@ -14,7 +15,6 @@ export const MatchDetailCard = ({teamName, match}) => {
             <h3>at {match.venue}, {match.city}</h3>
             <p>{match.date}</p>
             <h3>{match.matchWinner}  won by {match.resultMargin} {match.result}</h3>
-            <hr></hr>
         </div>
     );
 }

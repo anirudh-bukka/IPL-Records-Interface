@@ -1,0 +1,31 @@
+.TeamPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 2%;
+}
+
+.TeamPage .team-name-block {
+    grid-column: span 3; /* Divides space into 3:1 */
+    justify-self: start;
+    align-self: center;
+}
+
+.TeamPage .team-name-block .team-name {
+    font-size: 3rem;
+}
+
+.TeamPage .win-loss-block {
+    justify-self: center;
+    align-self: center;
+}
+
+
+.TeamPage .match-detail-block {
+    grid-column: span 4;
+}
+
+.TeamPage .MatchSmallCard {
+    justify-content: space-evenly;
+}
