@@ -6,7 +6,7 @@
     grid-row-gap: 2%;
 }
 
-.TeamPage .team-name-block {
+.TeamPage .team-name-block { 
     grid-column: span 3; /* Divides space into 3:1 */
     justify-self: start;
     align-self: center;
@@ -28,4 +28,11 @@
 
 .TeamPage .MatchSmallCard {
     justify-content: space-evenly;
+}
+
+.TeamPage .more-link {
+    text-align: center;
+    align-self: center;
+    /* justify-self: auto; */
+    /* justify-content: space-around; */
 }

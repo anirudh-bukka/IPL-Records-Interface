@@ -1,3 +1,12 @@
 .MatchDetailCard {
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.MatchDetailCard .match-date, .match-venue, .match-result {
+    margin-top: 2%; 
+}
+
+.MatchDetailCard .innings {
+    text-align: right;
 }
