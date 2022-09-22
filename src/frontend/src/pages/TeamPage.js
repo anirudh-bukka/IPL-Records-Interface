@@ -3,6 +3,7 @@ import { MatchDetailCard } from '../components/MatchDetailCard';
 import { MatchSmallCard } from '../components/MatchSmallCard';
 import { useParams } from 'react-router-dom';
 import './TeamPage.css';
+import { PieChart } from 'react-minimal-pie-chart';
 
 export const TeamPage = () => {
 
@@ -35,6 +36,12 @@ export const TeamPage = () => {
                 <h1 className='team-name'>{team.teamName}</h1>
             </div>
             <div className='win-loss-block'>
+                <PieChart
+                    data={[
+                        {title: 'Lost', value: team.totalMatches - team.totalWins, color: '#ff0000'},
+                        {title: 'Won', value: team.totalWins, color: '#04fd89'},
+                    ]}
+                /> 
                 Win / Loss
             </div>
             <div className='match-detail-block'>

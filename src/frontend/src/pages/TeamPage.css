@@ -19,6 +19,8 @@
 .TeamPage .win-loss-block {
     justify-self: center;
     align-self: center;
+    padding: 20%;
+    text-align: center;
 }
 
 
@@ -33,6 +35,7 @@
 .TeamPage .more-link {
     text-align: center;
     align-self: center;
+    font-size: x-large;
     /* justify-self: auto; */
     /* justify-content: space-around; */
 }
