@@ -1,6 +1,8 @@
 .MatchSmallCard {
-    text-align: center;
-    padding: 2%;
+    text-align: left;
+    padding: 5%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 } 
 
 .MatchSmallCard .vs {
@@ -19,4 +21,8 @@
     border-radius: 25px;
     border-color: red;
     /* background-color: red; */
+}
+
+.MatchSmallCard .match-result {
+    margin-bottom: 2%;
 }
