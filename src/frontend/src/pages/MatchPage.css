@@ -1,0 +1,11 @@
+.MatchPage {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+
+.MatchPage .TeamDetails {
+    /* align-items: flex-end; */
+    padding-left: 1%;
+}
