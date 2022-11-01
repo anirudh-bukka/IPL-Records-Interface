@@ -28,7 +28,7 @@ export const MatchPage = () => {
             };
 
             fetchMatches();
-        }, []
+        }, [teamName, year] // Because when we click an year from the list, it has to change -> render the corresponding information
     );
 
     return (
@@ -38,7 +38,7 @@ export const MatchPage = () => {
             {team.matches.slice(1).map(match => <MatchSmallCard teamName={team.teamName} match={match} />)} */}
             <div className='year-selector'>
                 <h3>Years</h3>
-                <YearSelector />
+                <YearSelector teamName={teamName}/>
             </div>
             <div className='TeamDetails'>
                 <h3>Match Page</h3>

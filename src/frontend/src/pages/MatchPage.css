@@ -9,3 +9,11 @@
     /* align-items: flex-end; */
     padding-left: 1%;
 }
+
+li {
+    list-style-type: none;
+}
+
+.LinksList .EachYear {
+    padding: 1rem;
+}
