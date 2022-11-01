@@ -4,6 +4,7 @@ import * as React from 'react';
 import './App.css';
 import { MatchPage } from './pages/MatchPage';
 // import { ContactDesktop } from './pages/ContactsDesktop';
+import { HomePage } from './pages/HomePage'
 
 function App() {
   // function Profile () {
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/teams/:teamName/matches/:year" element={<MatchPage />} />
           <Route path="/teams/:teamName" element={<TeamPage />} />
+          <Route path="/" element={<HomePage/>} />
         </Routes>
         {/* <TeamPage /> */}
       </Router>
